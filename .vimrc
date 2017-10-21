@@ -28,6 +28,11 @@ Plugin 'yggdroot/indentline'
 " show indent
 " Plugin 'octol/vim-cpp-enhanced-highlight'
 " as the name indicated
+"
+Plugin 'lervag/vimtex'
+" vimtex 
+Plugin 'Conque-GDB'
+" GDB integration
 
 " All Plugins must be added before the following line
 call vundle#end()            " required
@@ -51,7 +56,7 @@ autocmd BufReadPost *
 
 
 autocmd FileType text setlocal textwidth=88
-" For all text files set 'textwidth' to 78 characters.
+" For all text files set 'textwidth' to 88 characters.
 
 
 "" SEARCHING 
@@ -109,4 +114,7 @@ set updatetime=250
 
 "" SPECIAL KEY MAPPINGS 
 
+"" FOR LATEX
 
+let g:tex_conceal = ""
+let g:tex_flavor = "latex"
