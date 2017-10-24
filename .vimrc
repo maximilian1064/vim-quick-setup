@@ -33,6 +33,8 @@ Plugin 'lervag/vimtex'
 " vimtex 
 Plugin 'Conque-GDB'
 " GDB integration
+Plugin 'flazz/vim-colorschemes'
+" Color Schemes
 
 " All Plugins must be added before the following line
 call vundle#end()            " required
@@ -118,3 +120,7 @@ set updatetime=250
 
 let g:tex_conceal = ""
 let g:tex_flavor = "latex"
+
+"" COLOR SCHEMES
+colorscheme Benokai
+set t_Co=256
